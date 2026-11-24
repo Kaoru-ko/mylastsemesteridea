@@ -5,12 +5,14 @@ Tugas utama agen dalam sistem ini **bukan** menghasilkan sebanyak mungkin ide, m
 1. **Membuktikan secara objektif** mengapa sebuah ide layak dikembangkan (*burden of proof*).
 2. **Berani menyatakan kegagalan** ketika tidak ada bukti nyata, urgensi masalah, atau mekanisme teknis yang masuk akal.
 
-## 2. Pembagian Tanggung Jawab 5 File Sistem
-- **`SETUPS.md`:** Titik masuk tunggal (*single-layer setup*), instruksi aktivasi agen, dan protokol verifikasi sinkronisasi mandiri.
+## 2. Pembagian Tanggung Jawab Sistem & Repositori
+- **Target Repositori & Branch Wajib (Perkara Ide):** Seluruh pembaruan, pencatatan, kritisi, revisi, dan laporan ide **wajib** di-commit dan di-push ke branch `IdeJudulTA` pada `https://github.com/Kaoru-ko/mylastsemesteridea/tree/IdeJudulTA`.
+- **`SETUPS.md`:** Titik masuk tunggal (*single-layer setup*), instruksi aktivasi agen, aturan Git branch `IdeJudulTA`, dan protokol verifikasi sinkronisasi mandiri.
 - **`AGENTS.md` (File Ini):** Aturan perilaku, batas kognitif, anti-bias, dan kepatuhan transaksi.
 - **`BRAINSTORMING.md`:** Prosedur operasional langkah-demi-langkah, gerbang penyaringan, dan aturan transisi status.
 - **`MEMORY.md`:** *Single Source of Truth* untuk **seluruh identitas ide (`IDEA-ID`) dan status terkininya**.
 - **`MISTAKES.md`:** *Single Source of Truth* untuk **riwayat kegagalan (`MISTAKE-ID`), akar masalah, anti-pattern, dan syarat evaluasi ulang**.
+- **File Laporan Terbaca (`IDEATION_REPORT.xlsx`, `IDEATION_REPORT.csv`, `IDEATION_REPORT.txt`):** Output laporan terstruktur yang wajib disinkronkan setiap kali `MEMORY.md` atau `MISTAKES.md` berubah.
 
 ## 3. Aturan Wajib Perilaku Agen (Hard Constraints)
 
@@ -33,6 +35,6 @@ Setiap kali ide selesai menjalani `REVISING` dan dievaluasi ulang:
 - Kekurangan data lapangan, standar domain, atau sumber rujukan yang belum diperoleh **tidak boleh** langsung divonis sebagai kegagalan fundamental. Gunakan status `BLOCKED_PENDING_EVIDENCE` atau `ON_HOLD` disertai syarat pembuka blokir (`Unblock_Trigger`).
 - Sebaliknya, jika masalahnya tidak mendesak/tidak berdasar atau solusinya kalah dibanding alat murah yang sudah ada tanpa nilai tambah nyata, vonis sebagai `FAILED_ARCHIVED`.
 
-### E. Kepatuhan Sinkronisasi Lintas-File (`PENDING_SYNC`)
+### E. Kepatuhan Sinkronisasi Lintas-File, Laporan & Git Branch `IdeJudulTA`
 - Sebelum mengusulkan, mengkritisi, atau mengevaluasi ide apa pun, agen **wajib membaca** `MEMORY.md` dan `MISTAKES.md`.
-- Setiap perubahan status menuju kegagalan wajib mengikuti protokol transaksi di `BRAINSTORMING.md` dan lolos *Self-Verification Checklist* pada `SETUPS.md`.
+- Setiap perubahan status ide wajib mengikuti protokol transaksi di `BRAINSTORMING.md`, memperbarui file laporan (`IDEATION_REPORT.xlsx`, `IDEATION_REPORT.csv`, `IDEATION_REPORT.txt`), lolos *Self-Verification Checklist* pada `SETUPS.md`, serta di-commit dan di-push ke branch `IdeJudulTA` (`https://github.com/Kaoru-ko/mylastsemesteridea/tree/IdeJudulTA`).

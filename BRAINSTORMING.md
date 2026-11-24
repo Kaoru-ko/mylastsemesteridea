@@ -1,6 +1,6 @@
 # BRAINSTORMING.md — Prosedur Operasional Standar (SOP) Ideasi & Validasi
 
-Dokumen ini mengatur alur kerja eksekusi dari penciptaan ide hingga keputusan akhir. Semua agen wajib mematuhi aturan perilaku pada `AGENTS.md`.
+Dokumen ini mengatur alur kerja eksekusi dari penciptaan ide hingga keputusan akhir dan penyimpanan ke repositori. Semua agen wajib mematuhi aturan perilaku pada `AGENTS.md`.
 
 ---
 
@@ -46,10 +46,10 @@ Cocokkan kandidat ide dengan `MEMORY.md` dan `MISTAKES.md`. **Pengecekan dilakuk
   $\rightarrow$ Catat `IDEA-ID` baru dan ubah status ide lama menjadi `SUPERSEDED` dengan referensi `Superseded-By: IDEA-YYY`.
 
 ### Tahap 2: Registrasi Awal ke `MEMORY.md`
-- Buat entri baru di `MEMORY.md` dengan format `IDEA-XXX`, `Status: DRAFT`, `Iteration: 0/3`, dan `Sync_State: SYNCED`.
+- Buat entri baru di `MEMORY.md` dengan format `IDEA-XXX`, `Status: DRAFT`, `Iteration: 0/3`, dan `Sync_State: SYNCED`, lalu jalankan **Tahap 7**.
 
 ### Tahap 3: Evaluasi Independen & Sesi Kritisi (4 Tes Kegagalan)
-Ubah status di `MEMORY.md` menjadi `EVALUATING`, lalu uji kandidat ide secara berurutan terhadap 4 pertanyaan berikut (definisi detail ada di `MISTAKES.md`):
+Ubah status di `MEMORY.md` menjadi `EVALUATING`, lalu uji kandidat ide secara kritis terhadap 4 pertanyaan berikut (definisi detail ada di `MISTAKES.md`):
 1. **Tes 1 — Problem Failure:** Apakah masalahnya benar-benar nyata, mendesak di objek tersebut, bebas dari bias variabel lain (*confounding factors*), dan didukung bukti?
 2. **Tes 2 — Solution Failure:** Apakah solusi benar-benar menjawab akar masalah dan punya pembeda nyata dibanding produk komersial murah/solusi yang sudah ada?
 3. **Tes 3 — Feasibility Failure:** Apakah realistis dijalankan dalam batasan waktu skripsi/riset, biaya, akses objek lapangan, dan standar keselamatan?
@@ -58,8 +58,8 @@ Ubah status di `MEMORY.md` menjadi `EVALUATING`, lalu uji kandidat ide secara be
 **Keputusan Tahap 3:**
 - **Jika gagal mutlak pada salah satu dari 4 tes:** Jalankan **Protokol Kegagalan (Tahap 6)**.
 - **Jika terdapat celah teknis yang dapat diperbaiki & `Iteration < 3`:** Ubah status menjadi `REVISING`, naikkan `Iteration + 1`, dan masuk ke **Tahap 4**.
-- **Jika `Iteration >= 3` atau kendalanya berupa kebutuhan standar/data spesifik lapangan yang belum tersedia:** Ubah status menjadi `BLOCKED_PENDING_EVIDENCE` (atau `ON_HOLD` untuk tinjauan manusia) dan isi `Unblock_Trigger`.
-- **Jika lolos keempat tes di tingkat konseptual:** Ubah status menjadi `PROVISIONAL_PASS` dan lanjut ke **Tahap 5**.
+- **Jika `Iteration >= 3` atau kendalanya berupa kebutuhan standar/data spesifik lapangan yang belum tersedia:** Ubah status menjadi `BLOCKED_PENDING_EVIDENCE` (atau `ON_HOLD` untuk tinjauan manusia), isi `Unblock_Trigger`, lalu jalankan **Tahap 7**.
+- **Jika lolos keempat tes di tingkat konseptual:** Ubah status menjadi `PROVISIONAL_PASS`, jalankan **Tahap 7**, dan lanjut ke **Tahap 5**.
 
 ### Tahap 4: Siklus Revisi & *Blind Re-evaluation*
 1. Lakukan perbaikan spesifik pada celah yang dikritisi dan simpan seluruh temuan/bukti baru ke dalam `Evidence_Log` di `MEMORY.md`.
@@ -68,8 +68,8 @@ Ubah status di `MEMORY.md` menjadi `EVALUATING`, lalu uji kandidat ide secara be
 
 ### Tahap 5: Validasi Bukti Akhir
 Untuk ide berstatus `PROVISIONAL_PASS`, lakukan verifikasi bukti empiris/simulasi/literatur primer:
-- **Terbukti & realistis:** Ubah status di `MEMORY.md` menjadi `VALIDATED_ACTIVE`.
-- **Bukti belum tersedia (menunggu eksperimen/data):** Ubah status menjadi `BLOCKED_PENDING_EVIDENCE` dan tetapkan `Unblock_Trigger`.
+- **Terbukti & realistis:** Ubah status di `MEMORY.md` menjadi `VALIDATED_ACTIVE`, lalu jalankan **Tahap 7**.
+- **Bukti belum tersedia (menunggu eksperimen/data):** Ubah status menjadi `BLOCKED_PENDING_EVIDENCE`, tetapkan `Unblock_Trigger`, lalu jalankan **Tahap 7**.
 - **Terbukti tidak layak / asumsi gugur:** Jalankan **Protokol Kegagalan (Tahap 6)**.
 
 ### Tahap 6: Protokol Kegagalan & Transaksi Sinkronisasi Atomik
@@ -80,4 +80,19 @@ Setiap ide yang gagal (baik langsung dari `DRAFT`/`EVALUATING` maupun setelah se
    - `Status: FAILED_ARCHIVED`
    - `Mistake_Ref: MISTAKE-XXX`
    - `Sync_State: SYNCED`
-4. Jalankan *Self-Verification Checklist* pada `SETUPS.md` sebelum menyelesaikan respons.
+4. Lanjutkan ke **Tahap 7**.
+
+### Tahap 7: Pembaruan Laporan & Commit ke Branch `IdeJudulTA` (Wajib)
+Setiap kali ada perubahan perkara ide di `MEMORY.md` atau `MISTAKES.md`:
+1. Perbarui ketiga file laporan agar sinkron 100%:
+   - `IDEATION_REPORT.xlsx` (laporan utama multi-sheet: Dashboard, Daftar Ide, Arsip Kegagalan)
+   - `IDEATION_REPORT.csv` (ekspor tabel datar UTF-8)
+   - `IDEATION_REPORT.txt` (ringkasan laporan teks mudah baca)
+2. Verifikasi seluruh poin pada *Self-Verification Checklist* di `SETUPS.md`.
+3. Commit dan push seluruh perubahan **khusus ke branch `IdeJudulTA`** pada repositori `https://github.com/Kaoru-ko/mylastsemesteridea/tree/IdeJudulTA`:
+   ```bash
+   git checkout -B IdeJudulTA
+   git add AGENTS.md BRAINSTORMING.md MEMORY.md MISTAKES.md SETUPS.md IDEATION_REPORT.xlsx IDEATION_REPORT.csv IDEATION_REPORT.txt
+   git commit -m "docs(ideation): update IDEA-XXX status and sync ideation report"
+   git push -u origin IdeJudulTA
+   ```

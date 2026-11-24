@@ -1,0 +1,72 @@
+================================================================================
+LAPORAN STATUS IDE TUGAS AKHIR & EVALUASI KRITIS (IDEATION REPORT)
+================================================================================
+Repositori GitHub : https://github.com/Kaoru-ko/mylastsemesteridea
+Branch Wajib Ide  : IdeJudulTA (https://github.com/Kaoru-ko/mylastsemesteridea/tree/IdeJudulTA)
+Tanggal Pembaruan : 2026-11-25
+Status Sinkron    : 100% SYNCED (MEMORY.md <-> MISTAKES.md <-> REPORT)
+
+1. RINGKASAN EKSEKUTIF STATUS IDE
+--------------------------------------------------------------------------------
+- Total Ide Tercatat              : 5
+- VALIDATED_ACTIVE (Siap Lanjut)  : 0
+- PROVISIONAL_PASS (Lolos Awal)   : 0
+- DRAFT (Belum Dikritisi)         : 2
+- BLOCKED_PENDING_EVIDENCE        : 1
+- FAILED_ARCHIVED (Gugur/Arsip)   : 2
+
+2. DAFTAR RINCIAN IDE (REGISTRY)
+--------------------------------------------------------------------------------
+[IDEA-001] (Pendidikan) — STATUS: FAILED_ARCHIVED | Iterasi: 0/3 | Ref: MISTAKE-001
+  Judul          : Rancang Bangun Sistem Pemantauan Kualitas Udara dan Ketidaknyamanan Termal Ruang Kelas Berbasis Sensor Lingkungan dan Notifikasi Otomatis
+  Masalah/Tujuan : Pemantauan suhu dan kadar CO2/partikel di ruang kelas/praktikum untuk mencegah mahasiswa cepat mengantuk, pusing, dan turun konsentrasi saat kuliah berlangsung.
+  Hasil Evaluasi : Gugur pada Tes 1 (PROBLEM_FAILURE). Ruangan kampus target umumnya sudah ber-AC dan berventilasi sehingga urgensi intervensi tidak terbukti mendesak; gejala mengantuk dipengaruhi faktor lain (pencahayaan, ergonomi bangku, suara dosen, kurang istirahat, kondisi medis).
+  Syarat Lanjut  : [MISTAKE-001] Tersedia data pengukuran lapangan awal (baseline audit) pada ruang kelas/praktikum spesifik yang membuktikan kadar CO2 > 1000 ppm atau kegagalan termal berulang saat kelas terisi penuh meskipun AC/ventilasi beroperasi normal.
+--------------------------------------------------------------------------------
+[IDEA-002] (Pendidikan) — STATUS: FAILED_ARCHIVED | Iterasi: 0/3 | Ref: MISTAKE-002
+  Judul          : Sistem Alat Bantu Diagnosis Kesalahan Rangkaian Dasar Praktikum Mikrokontroler Berbasis Pengukuran Tegangan dan Kontinuitas
+  Masalah/Tujuan : Membantu mahasiswa melacak short circuit, salah polaritas/pin, dan loose connection pada breadboard praktikum mikrokontroler.
+  Hasil Evaluasi : Gugur pada Tes 2 (SOLUTION_FAILURE). Perangkat edukasi rangkaian dasar sudah banyak dijual di pasar daring (model buku tombol, balok magnetik, continuity tester) dengan harga jauh lebih murah dan kualitas mapan; usulan belum membuktikan pembeda teknis signifikan.
+  Syarat Lanjut  : [MISTAKE-002] Ditemukan celah diagnostik spesifik pada modul praktikum mikrokontroler tingkat lanjut (misalnya deteksi konflik bus komunikasi atau fault injection pin mikrokontroler otomatis) yang tidak tersedia pada alat komersial murah, disertai bukti kebutuhan dosen/laboran.
+--------------------------------------------------------------------------------
+[IDEA-003] (Kesehatan) — STATUS: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Ref: -
+  Judul          : Sistem Pemantauan Suhu dan Kelembapan Lemari Penyimpanan Sediaan Farmasi Berbasis Peringatan Ambang Batas Real-Time
+  Masalah/Tujuan : Pemantauan kestabilan suhu dan kelembapan pada lemari penyimpanan obat, reagen, atau vaksin di fasilitas kesehatan (klinik/puskesmas/apotek) untuk mencegah penurunan mutu sediaan.
+  Hasil Evaluasi : Belum terbukti gagal secara teknis, tetapi tertahan karena setiap jenis obat/vaksin memiliki rentang suhu berbeda dan usulan belum menetapkan sediaan spesifik, rujukan standar medis resmi, serta data urgensi di fasilitas kesehatan target.
+  Syarat Lanjut  : (1) Menetapkan jenis sediaan farmasi spesifik (misal vaksin rantai dingin 2-8 C atau obat 15-25 C) beserta rujukan standar Kemenkes/WHO/Farmakope; (2) Melampirkan data awal urgensi masalah pencatatan/fluktuasi suhu dari klinik, apotek, atau puskesmas target.
+--------------------------------------------------------------------------------
+[IDEA-004] (Kesehatan) — STATUS: DRAFT | Iterasi: 0/3 | Ref: -
+  Judul          : Rancang Bangun Sistem Pemantauan Sisa Volume dan Kecepatan Tetesan Infus Berbasis Sensor Optik dan Load Cell
+  Masalah/Tujuan : Pemantauan sisa volume cairan dan laju tetesan infus untuk mengurangi keterlambatan deteksi saat cairan hampir habis atau aliran terhenti pada skenario simulasi ruang perawatan.
+  Hasil Evaluasi : Ide baru dicatat (DRAFT). Belum menjalani sesi kritisi dan audit 4 Tes Kegagalan.
+  Syarat Lanjut  : Menunggu sesi kritisi awal: komparasi dengan infusion pump eksisting, stabilitas pembacaan load cell terhadap gerakan tiang infus, dan batasan keamanan alat medis.
+--------------------------------------------------------------------------------
+[IDEA-005] (Industri) — STATUS: DRAFT | Iterasi: 0/3 | Ref: -
+  Judul          : Sistem Deteksi Dini Anomali Getaran dan Suhu Motor Pompa Industri Berbasis Sensor Akselerometer dan Temperatur
+  Masalah/Tujuan : Pemantauan dini keausan bearing, misalignment, dan overheating pada motor induksi atau pompa utilitas/industri untuk mencegah unplanned downtime.
+  Hasil Evaluasi : Ide baru dicatat (DRAFT). Belum menjalani sesi kritisi dan audit 4 Tes Kegagalan.
+  Syarat Lanjut  : Menunggu sesi kritisi awal: ketersediaan unit motor/pompa nyata untuk pengujian, metode simulasi fault tanpa merusak aset industri, dan ambang batas getaran standar ISO 10816/20816.
+--------------------------------------------------------------------------------
+
+3. ARSIP KEGAGALAN & ANTI-PATTERN (MISTAKES LEDGER)
+--------------------------------------------------------------------------------
+[MISTAKE-001 -> IDEA-001] Kategori: PROBLEM_FAILURE | Tanggal: 2026-11-25
+  Ringkasan Ide        : Pemantauan kualitas udara (CO2/partikel) dan ketidaknyamanan termal ruang kelas/praktikum ber-AC untuk mencegah mahasiswa mengantuk dan turun konsentrasi.
+  Akar Masalah & Bukti : (1) Ruang kelas/laboratorium target umumnya sudah dilengkapi AC dan ventilasi sehingga urgensi intervensi lingkungan tidak terbukti mendesak; (2) Gejala mahasiswa mengantuk di kelas dipengaruhi banyak variabel lain (confounding factors) seperti pencahayaan, ergonomi bangku, intonasi/metode penyampaian dosen, kurang tidur, serta kondisi medis individu.
+  Anti-Pattern (Stop)  : Jangan mengaitkan gejala psikologis/fisiologis umum (seperti mengantuk di kelas) secara langsung sebagai bukti kerusakan kualitas udara pada ruangan yang sudah ber-AC tanpa pengukuran baseline aktual.
+  Re-evaluation Trigger: Tersedia data pengukuran lapangan awal (baseline audit) pada ruang kelas/praktikum spesifik yang membuktikan kadar CO2 melampaui ambang batas kenyamanan (>1000 ppm) atau kegagalan termal berulang saat kelas terisi penuh meskipun AC/ventilasi beroperasi normal.
+--------------------------------------------------------------------------------
+[MISTAKE-002 -> IDEA-002] Kategori: SOLUTION_FAILURE | Tanggal: 2026-11-25
+  Ringkasan Ide        : Alat bantu diagnosis kesalahan rangkaian dasar praktikum mikrokontroler (hubung singkat, salah polaritas/pin, loose connection) berbasis pengukuran tegangan dan kontinuitas.
+  Akar Masalah & Bukti : Perangkat pembelajaran rangkaian dasar (seperti kit edukasi tombol, balok magnetik, continuity tester, dan modul pelatihan dasar) sudah banyak dijual di pasaran dengan harga jauh lebih murah dan kualitas mapan. Usulan tidak membuktikan diferensiasi teknis atau keunggulan diagnostik yang tidak bisa dipenuhi oleh produk komersial yang sudah ada.
+  Anti-Pattern (Stop)  : Jangan mengusulkan pembuatan alat bantu praktikum dasar yang fungsinya sudah terwakili oleh kit edukasi komersial murah tanpa mendefinisikan celah teknis spesifik yang gagal ditangani alat komersial tersebut.
+  Re-evaluation Trigger: Ditemukan celah diagnostik spesifik pada modul praktikum mikrokontroler tingkat lanjut (misalnya deteksi konflik bus komunikasi atau fault injection pin mikrokontroler secara otomatis) yang tidak tersedia pada alat komersial murah, disertai bukti kebutuhan dari dosen/laboran mata kuliah terkait.
+--------------------------------------------------------------------------------
+
+4. PERINTAH COMMIT GIT WAJIB (BRANCH: IdeJudulTA)
+--------------------------------------------------------------------------------
+git checkout -B IdeJudulTA
+git add AGENTS.md BRAINSTORMING.md MEMORY.md MISTAKES.md SETUPS.md IDEATION_REPORT.xlsx IDEATION_REPORT.csv IDEATION_REPORT.txt
+git commit -m "docs(ideation): update idea registry, mistakes, and reports"
+git push -u origin IdeJudulTA
+================================================================================
