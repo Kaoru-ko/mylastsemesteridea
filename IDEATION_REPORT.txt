@@ -1,15 +1,18 @@
 ================================================================================
 LAPORAN RINGKAS IDEASI TUGAS AKHIR (SYNCED WITH MEMORY.md & MISTAKES.md)
 Repositori : https://github.com/Kaoru-ko/mylastsemesteridea (Branch: IdeJudulTA)
-Tanggal    : 2026-11-25
+Tanggal    : 2026-11-26
 ================================================================================
 
 1. RINGKASAN STATUS IDE
-   - Total Ide Terdaftar        : 6
-   - FAILED_ARCHIVED          : 2 (IDEA-001, IDEA-002)
-   - BLOCKED_PENDING_EVIDENCE : 2 (IDEA-003, IDEA-006)
-   - DRAFT                    : 2 (IDEA-004, IDEA-005)
-   - VALIDATED_ACTIVE         : 0
+   - Total Ide Terdaftar        : 45
+   - FAILED_ARCHIVED            : 6 (IDEA-001, IDEA-002, IDEA-013, IDEA-020, IDEA-028, IDEA-048)
+   - BLOCKED_PENDING_EVIDENCE   : 19 (IDEA-006, IDEA-014, IDEA-016, IDEA-022, IDEA-023, IDEA-025, IDEA-029, IDEA-030, IDEA-031, IDEA-032, IDEA-033, IDEA-034, IDEA-035, IDEA-036, IDEA-038, IDEA-040, IDEA-042, IDEA-049, IDEA-051)
+   - EVALUATING                 : 9 (IDEA-037, IDEA-039, IDEA-041, IDEA-043, IDEA-044, IDEA-045, IDEA-046, IDEA-047, IDEA-050)
+   - REVISING                   : 3 (IDEA-019, IDEA-021, IDEA-027)
+   - VALIDATED_ACTIVE           : 5 (IDEA-015, IDEA-017, IDEA-018, IDEA-024, IDEA-026)
+   - DRAFT                      : 2 (IDEA-004, IDEA-005)
+   - SUPERSEDED                 : 1 (IDEA-003)
 
 --------------------------------------------------------------------------------
 2. DAFTAR SELURUH IDE (MEMORY.md)
@@ -26,11 +29,11 @@ Tanggal    : 2026-11-25
   Bukti   : [Iterasi 0 - EVALUATING -> FAILED_ARCHIVED]: Gugur pada Tes 2 (SOLUTION_FAILURE). Perangkat edukasi rangkaian dasar sudah banyak tersedia di pasar dengan harga jauh lebih murah tanpa pembeda signifikan.
   Syarat  : Lihat MISTAKE-002
 
-[IDEA-003] (Kesehatan) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: N/A
+[IDEA-003] (Kesehatan) - Status: SUPERSEDED | Iterasi: 0/3 | Sync: SYNCED | Ref: N/A
   Judul   : Sistem Pemantauan Suhu dan Kelembapan Lemari Penyimpanan Sediaan Farmasi Berbasis Peringatan Ambang Batas Real-Time
   Konteks : Pemantauan kestabilan suhu dan kelembapan pada lemari penyimpanan obat, reagen, atau vaksin di fasilitas kesehatan (klinik/puskesmas/apotek) untuk mencegah penurunan mutu sediaan.
   Bukti   : [Iterasi 0 - EVALUATING -> BLOCKED_PENDING_EVIDENCE]: Tertahan karena belum menetapkan jenis sediaan target, referensi standar medis resmi, dan bukti urgensi di lokasi spesifik.
-  Syarat  : (1) Menetapkan jenis sediaan farmasi spesifik beserta standar resmi Kemenkes/WHO/Farmakope; (2) Melampirkan data awal urgensi masalah dari fasilitas kesehatan target.
+  Syarat  : Superseded-By: IDEA-034; ruang lingkup dikunci ke rantai dingin vaksin rutin 2-8 C.
 
 [IDEA-004] (Kesehatan) - Status: DRAFT | Iterasi: 0/3 | Sync: SYNCED | Ref: N/A
   Judul   : Rancang Bangun Sistem Pemantauan Sisa Volume dan Kecepatan Tetesan Infus Berbasis Sensor Optik dan Load Cell
@@ -50,6 +53,240 @@ Tanggal    : 2026-11-25
   Bukti   : [Iterasi 0 - UPDATE BUKTI LAPANGAN -> TETAP BLOCKED_PENDING_EVIDENCE]: Bukti baru dicatat: (a) Testimoni alumni SMKN 5 Kota Madiun (TKJ) bahwa praktik topologi & keamanan jaringan hanya menggunakan simulasi komputer & MikroTik tanpa alat peraga fisik; (b) Observasi langsung di SMK Swasta PGRI 1 Candiboko menemukan 0 alat peraga, hanya 1 lab kecil berisi 16 PC (Core i5 Gen 3, RAM 6 GB) yang tidak memadai untuk simulator virtualisasi berat (GNS3/EVE-NG), namun sekolah tersebut berjurusan RPL. Celah tersisa: (1) Risiko salah sasaran kurikulum jika objek uji hanya berjurusan RPL; (2) Belum ada silabus/CP resmi & wawancara guru; (3) Desain teknis mitigasi interferensi Wi-Fi 2.4 GHz (16+ node), eliminasi miskonsepsi 'ESP32 seperti router', dan spesifikasi modul keamanan jaringan belum ditetapkan.
   Syarat  : (1) Verifikasi kesesuaian silabus/CP SMK target (pastikan apakah materi topologi & keamanan jaringan fisik masuk CP RPL di SMK PGRI 1 Candiboko, atau tetapkan SMKN 5 Kota Madiun / SMK jurusan TKJ sebagai objek utama); (2) Wawancara terstruktur dengan guru pengampu lab mengenai kendala pemahaman siswa pada simulasi PC/MikroTik; (3) Desain arsitektur non-router yang memitigasi interferensi kanal Wi-Fi 2.4 GHz untuk skala 16-32 siswa; (4) Spesifikasi modul praktikum keamanan jaringan terukur sesuai standar kurikulum SMK.
 
+[IDEA-013] (Arsip Gagal) - Status: FAILED_ARCHIVED | Iterasi: 0/3 | Sync: SYNCED | Ref: MISTAKE-005
+  Judul   : Entri Arsip Kegagalan Sebelumnya (IDEA-013)
+  Konteks : Ide Arsip Gagal: Entri Arsip Kegagalan Sebelumnya (IDEA-013).
+  Bukti   : Legacy placeholder tanpa data; tidak dipakai sebagai bukti aktif. Digantikan oleh IDEA-049.
+  Syarat  : Lihat MISTAKE-005
+
+[IDEA-014] (Energi / PV) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: IEC 61724-1:2021 Annex C
+  Judul   : Estimasi Indeks Kehilangan Daya Akibat Debu PV (Soiling Ratio)
+  Konteks : Ide Energi / PV: Estimasi Indeks Kehilangan Daya Akibat Debu PV (Soiling Ratio).
+  Bukti   : IEC 61724-1:2021 Annex C dan IEA PVPS Task 13 terverifikasi; butuh 2-3 DOI eksplisit algoritma soiling & kompensasi Isc.
+  Syarat  : IEC 61724-1:2021 Annex C dan IEA PVPS Task 13 terverifikasi; butuh 2-3 DOI eksplisit algoritma soiling & kompensasi Isc.
+
+[IDEA-015] (Sensor / Kimia Air) - Status: VALIDATED_ACTIVE | Iterasi: 0/3 | Sync: SYNCED | Ref: ISO 7888, ASTM D1125
+  Judul   : Sensor Konduktivitas Empat-Elektroda dengan Kompensasi Suhu Polinomial
+  Konteks : Ide Sensor / Kimia Air: Sensor Konduktivitas Empat-Elektroda dengan Kompensasi Suhu Polinomial.
+  Bukti   : Tervalidasi lewat DOI 10.3390/s23020586, DOI 10.3389/fphys.2025.1537537, serta referensi 4-elektroda dan kalibrasi suhu.
+  Syarat  : Tervalidasi lewat DOI 10.3390/s23020586, DOI 10.3389/fphys.2025.1537537, serta referensi 4-elektroda dan kalibrasi suhu.
+
+[IDEA-016] (Kesehatan / Biomekanika) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: -
+  Judul   : Pemantau Sudut Fleksi Lutut dan Distribusi Beban Tumpuan Pasca-Operasi ACL
+  Konteks : Ide Kesehatan / Biomekanika: Pemantau Sudut Fleksi Lutut dan Distribusi Beban Tumpuan Pasca-Operasi ACL.
+  Bukti   : Literatur IMU ACL/rehabilitasi terverifikasi; butuh dokumen SOP fisioterapi mitra (%BB dan sudut fleksi mingguan) serta izin simulasi.
+  Syarat  : Literatur IMU ACL/rehabilitasi terverifikasi; butuh dokumen SOP fisioterapi mitra (%BB dan sudut fleksi mingguan) serta izin simulasi.
+
+[IDEA-017] (Bangunan / Pencahayaan) - Status: VALIDATED_ACTIVE | Iterasi: 0/3 | Sync: SYNCED | Ref: SNI 6197:2020, SNI 7062:2019, IEEE Std 1789-2015
+  Judul   : Kendali Pencahayaan Hibrida Daylight-LED Dual-Node dan Mitigasi Silau Tirai
+  Konteks : Ide Bangunan / Pencahayaan: Kendali Pencahayaan Hibrida Daylight-LED Dual-Node dan Mitigasi Silau Tirai.
+  Bukti   : Tervalidasi lewat 3 publikasi ber-DOI 2025 (10.18086/swc.2025.08.05, 10.15627/jd.2025.21, 10.3389/fbuil.2025.1741763) dan standar SNI/IEEE.
+  Syarat  : Tervalidasi lewat 3 publikasi ber-DOI 2025 (10.18086/swc.2025.08.05, 10.15627/jd.2025.21, 10.3389/fbuil.2025.1741763) dan standar SNI/IEEE.
+
+[IDEA-018] (Proteksi Listrik) - Status: VALIDATED_ACTIVE | Iterasi: 0/3 | Sync: SYNCED | Ref: IEC 62606, UL 1699
+  Judul   : Deteksi Dini Busur Api Seri 220 VAC Berbasis HFCT dan Bahu Arus Zero-Crossing
+  Konteks : Ide Proteksi Listrik: Deteksi Dini Busur Api Seri 220 VAC Berbasis HFCT dan Bahu Arus Zero-Crossing.
+  Bukti   : Tervalidasi lewat DOI 10.3390/en19225564, literatur MDPI 2023-2026, dan protokol bangku uji IEC 62606.
+  Syarat  : Tervalidasi lewat DOI 10.3390/en19225564, literatur MDPI 2023-2026, dan protokol bangku uji IEC 62606.
+
+[IDEA-019] (Manufaktur Aditif / 3D Printing) - Status: REVISING | Iterasi: 1/3 | Sync: SYNCED | Ref: ASTM D6980 (kadar air), ASTM D3418/E1356 (Tg), ASTM D638
+  Judul   : Pengkondisi dan Pengering Filamen Higroskopis Otomatis Berbasis Delta-AH, Gravimetri, dan Tg
+  Konteks : Ide Manufaktur Aditif / 3D Printing: Pengkondisi dan Pengering Filamen Higroskopis Otomatis Berbasis Delta-AH, Gravimetri, dan Tg.
+  Bukti   : Re-evaluasi 2026-11-26: ASTM D6980 adalah kadar air by loss in weight, bukan Tg; Tg memerlukan DSC (ASTM D3418/E1356). Pemanasan 50 C pada ambient 30 C/70% RH hanya mencapai ~25,5% RH; dehumidifikasi wajib. Gravimetri 1 kg butuh resolusi 0,1 g untuk 0,01%.
+  Syarat  : Re-evaluasi 2026-11-26: ASTM D6980 adalah kadar air by loss in weight, bukan Tg; Tg memerlukan DSC (ASTM D3418/E1356). Pemanasan 50 C pada ambient 30 C/70% RH hanya mencapai ~25,5% RH; dehumidifikasi wajib. Gravimetri 1 kg butuh resolusi 0,1 g untuk 0,01%.
+
+[IDEA-020] (Arsip Gagal) - Status: FAILED_ARCHIVED | Iterasi: 0/3 | Sync: SYNCED | Ref: MISTAKE-006
+  Judul   : Entri Arsip Kegagalan Sebelumnya (IDEA-020)
+  Konteks : Ide Arsip Gagal: Entri Arsip Kegagalan Sebelumnya (IDEA-020).
+  Bukti   : Legacy placeholder tanpa data; tidak dipakai sebagai bukti aktif. Digantikan oleh IDEA-050.
+  Syarat  : Lihat MISTAKE-006
+
+[IDEA-021] (HVAC / FDD) - Status: REVISING | Iterasi: 2/3 | Sync: SYNCED | Ref: ASHRAE Guideline 22, ISO 5149
+  Judul   : Diagnosis Undercharge Refrigeran dan Fouling Kondensor
+  Konteks : Ide HVAC / FDD: Diagnosis Undercharge Refrigeran dan Fouling Kondensor.
+  Bukti   : Literatur 2024-2025 menunjukkan redaman superheat oleh TXV/receiver dan efek gangguan ganda; revisi ke showcase R134a pipa kapiler & fitur daya/approach.
+  Syarat  : Literatur 2024-2025 menunjukkan redaman superheat oleh TXV/receiver dan efek gangguan ganda; revisi ke showcase R134a pipa kapiler & fitur daya/approach.
+
+[IDEA-022] (NDT / Metrologi) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: -
+  Judul   : Alat Ukur Ketebalan Lapisan Non-Konduktif Dual-Mode
+  Konteks : Ide NDT / Metrologi: Alat Ukur Ketebalan Lapisan Non-Konduktif Dual-Mode.
+  Bukti   : Rujukan eddy-current dan dual-function teridentifikasi; butuh verifikasi DOI penuh serta keunggulan thermal drift dibanding gauge FN murah.
+  Syarat  : Rujukan eddy-current dan dual-function teridentifikasi; butuh verifikasi DOI penuh serta keunggulan thermal drift dibanding gauge FN murah.
+
+[IDEA-023] (Pertambangan / Geoteknik) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: Kepmen ESDM No. 1827K/30/MEM/2018
+  Judul   : Peringatan Dini Pergeseran Dinding Terowongan Tambang Bawah Tanah
+  Konteks : Ide Pertambangan / Geoteknik: Peringatan Dini Pergeseran Dinding Terowongan Tambang Bawah Tanah.
+  Bukti   : Regulasi RMR/Q-System dan DOI 10.1002/dug2.70029 terverifikasi; butuh ambang deformasi lokasi dan izin masuk dari KTT mitra.
+  Syarat  : Regulasi RMR/Q-System dan DOI 10.1002/dug2.70029 terverifikasi; butuh ambang deformasi lokasi dan izin masuk dari KTT mitra.
+
+[IDEA-024] (Kualitas Air / Optik) - Status: VALIDATED_ACTIVE | Iterasi: 0/3 | Sync: SYNCED | Ref: ISO 7027-1:2016, SNI 06-6989.25-2005
+  Judul   : Turbidimeter Rasio Nefelometrik Inframerah 860 nm Anti-Interferensi Warna
+  Konteks : Ide Kualitas Air / Optik: Turbidimeter Rasio Nefelometrik Inframerah 860 nm Anti-Interferensi Warna.
+  Bukti   : Tervalidasi lewat DOI 10.1021/acs.jchemed.1c01225, DOI 10.3390/s23083913, artikel Sensors 2026, serta standar ISO/SNI.
+  Syarat  : Tervalidasi lewat DOI 10.1021/acs.jchemed.1c01225, DOI 10.3390/s23083913, artikel Sensors 2026, serta standar ISO/SNI.
+
+[IDEA-025] (Kontrol / Mekatronika) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: -
+  Judul   : Kendali Posisi dan Kompensasi Backlash Adaptif Aktuator Lead-Screw
+  Konteks : Ide Kontrol / Mekatronika: Kendali Posisi dan Kompensasi Backlash Adaptif Aktuator Lead-Screw.
+  Bukti   : DOI 10.1088/1742-6596/3330/1/012002 dan Sensors 2026 terverifikasi; masih butuh DOI khusus estimasi arus fasa stepper untuk deteksi backlash.
+  Syarat  : DOI 10.1088/1742-6596/3330/1/012002 dan Sensors 2026 terverifikasi; masih butuh DOI khusus estimasi arus fasa stepper untuk deteksi backlash.
+
+[IDEA-026] (Baterai / Second-Life) - Status: VALIDATED_ACTIVE | Iterasi: 0/3 | Sync: SYNCED | Ref: IEC 61960-3:2017, USABC HPPC
+  Judul   : Karakterisasi SoH dan DCIR Baterai Lithium-Ion Second-Life Berbasis Pulsa HPPC 4-Kawat Kelvin
+  Konteks : Ide Baterai / Second-Life: Karakterisasi SoH dan DCIR Baterai Lithium-Ion Second-Life Berbasis Pulsa HPPC 4-Kawat Kelvin.
+  Bukti   : Tervalidasi lewat 4 DOI 2022-2024 (10.1016/j.apenergy.2022.119992, 10.1016/j.apenergy.2024.123542, 10.1109/SPECon61254.2024.10537480, 10.3389/fchem.2024.1358417) & data SoH-DCIR.
+  Syarat  : Tervalidasi lewat 4 DOI 2022-2024 (10.1016/j.apenergy.2022.119992, 10.1016/j.apenergy.2024.123542, 10.1109/SPECon61254.2024.10537480, 10.3389/fchem.2024.1358417) & data SoH-DCIR.
+
+[IDEA-027] (Kualitas Daya Listrik) - Status: REVISING | Iterasi: 1/3 | Sync: SYNCED | Ref: IEC 61000-4-30, NEMA MG 1, IEEE 1159
+  Judul   : Pemantauan Kualitas Daya Listrik dan Ketidakseimbangan Beban Fasa Berbasis ESP32
+  Konteks : Ide Kualitas Daya Listrik: Pemantauan Kualitas Daya Listrik dan Ketidakseimbangan Beban Fasa Berbasis ESP32.
+  Bukti   : Re-evaluasi 2026-11-26: ADC internal ESP32 tidak memadai; perlu sensor/IC energi eksternal; deklarasikan kelas (S, bukan A); keselamatan panel wajib.
+  Syarat  : Re-evaluasi 2026-11-26: ADC internal ESP32 tidak memadai; perlu sensor/IC energi eksternal; deklarasikan kelas (S, bukan A); keselamatan panel wajib.
+
+[IDEA-028] (Arsip Gagal) - Status: FAILED_ARCHIVED | Iterasi: 0/3 | Sync: SYNCED | Ref: MISTAKE-007
+  Judul   : Entri Arsip Kegagalan Sebelumnya (IDEA-028)
+  Konteks : Ide Arsip Gagal: Entri Arsip Kegagalan Sebelumnya (IDEA-028).
+  Bukti   : Legacy placeholder tanpa data; tidak dipakai sebagai bukti aktif. Digantikan oleh IDEA-051.
+  Syarat  : Lihat MISTAKE-007
+
+[IDEA-029] (Pembangkit Pikohidro / ELC) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: -
+  Judul   : Electronic Load Controller Biner Zero-Crossing SEIG Pikohidro
+  Konteks : Ide Pembangkit Pikohidro / ELC: Electronic Load Controller Biner Zero-Crossing SEIG Pikohidro.
+  Bukti   : DOI 10.1080/23311916.2022.2057115 dan desain INVOTEK UNP terverifikasi; butuh 1-2 DOI uji transien/harmonis ELC biner zero-crossing SEIG.
+  Syarat  : DOI 10.1080/23311916.2022.2057115 dan desain INVOTEK UNP terverifikasi; butuh 1-2 DOI uji transien/harmonis ELC biner zero-crossing SEIG.
+
+[IDEA-030] (Kesehatan / Rantai Dingin Darah) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: Permenkes No. 91 Tahun 2015
+  Judul   : Pemantauan Suhu dan Getaran Kontainer Transportasi Darah Transfusi
+  Konteks : Ide Kesehatan / Rantai Dingin Darah: Pemantauan Suhu dan Getaran Kontainer Transportasi Darah Transfusi.
+  Bukti   : Standar suhu komponen darah terverifikasi; butuh penyempitan ke WB/PRC (2-10 C), DOI ambang getaran jalan, dan izin uji coolbox mitra.
+  Syarat  : Standar suhu komponen darah terverifikasi; butuh penyempitan ke WB/PRC (2-10 C), DOI ambang getaran jalan, dan izin uji coolbox mitra.
+
+[IDEA-031] (Kesehatan Kerja / Getaran) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: ISO 5349, ISO 8041, Permenaker No. 5/2018
+  Judul   : Pemantauan Dosis Getaran Lengan-Tangan MEMS Filter Wh
+  Konteks : Ide Kesehatan Kerja / Getaran: Pemantauan Dosis Getaran Lengan-Tangan MEMS Filter Wh.
+  Bukti   : Prosiding MDPI dan arXiv:2509.16536 terverifikasi; butuh 2-3 DOI jurnal peer-reviewed 2022-2026 filter Wh MEMS & akses kalibrator ISO 8041.
+  Syarat  : Prosiding MDPI dan arXiv:2509.16536 terverifikasi; butuh 2-3 DOI jurnal peer-reviewed 2022-2026 filter Wh MEMS & akses kalibrator ISO 8041.
+
+[IDEA-032] (Energi Terbarukan / Biogas) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: VDI 4630
+  Judul   : Pemantauan Laju Produksi Biogas STP dan Komposisi NDIR Reaktor Anaerob
+  Konteks : Ide Energi Terbarukan / Biogas: Pemantauan Laju Produksi Biogas STP dan Komposisi NDIR Reaktor Anaerob.
+  Bukti   : DOI 10.1088/1755-1315/1187/1/012025, PMC12693810, dan Energies 2026 terverifikasi; butuh 1-2 DOI kalibrasi NDIR CH4/CO2 & koreksi komposisi gas.
+  Syarat  : DOI 10.1088/1755-1315/1187/1/012025, PMC12693810, dan Energies 2026 terverifikasi; butuh 1-2 DOI kalibrasi NDIR CH4/CO2 & koreksi komposisi gas.
+
+[IDEA-033] (Termofisika / Isolasi Termal) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: ASTM C177, ISO 8302, NIST
+  Judul   : Alat Ukur Konduktivitas Termal Guarded Hot Plate
+  Konteks : Ide Termofisika / Isolasi Termal: Alat Ukur Konduktivitas Termal Guarded Hot Plate.
+  Bukti   : Dokumen ASTM C177, ISO 8302, dan NIST kuat; masih perlu verifikasi DOI rujukan literatur 2022-2026 berteks penuh.
+  Syarat  : Dokumen ASTM C177, ISO 8302, dan NIST kuat; masih perlu verifikasi DOI rujukan literatur 2022-2026 berteks penuh.
+
+[IDEA-034] (Kesehatan / Cold Chain Vaksin) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: Revived/Locked from IDEA-003; Permenkes No. 12/2017, WHO PQS E006
+  Judul   : Rancang Bangun Sistem Pemantauan Rantai Dingin Vaksin Rutin 2-8 C Berbasis Sensor Akurasi Tinggi dengan Peringatan Excursion Berkelanjutan
+  Konteks : Ide Kesehatan / Cold Chain Vaksin: Rancang Bangun Sistem Pemantauan Rantai Dingin Vaksin Rutin 2-8 C Berbasis Sensor Akurasi Tinggi dengan Peringatan Excursion Berkelanjutan.
+  Bukti   : DOI 2024 (10.1016/j.heliyon.2024.e28910, 10.3390/pathogens13020116) dan standar 2-8 C terverifikasi; butuh 1 survei baseline faskes lokal.
+  Syarat  : DOI 2024 (10.1016/j.heliyon.2024.e28910, 10.3390/pathogens13020116) dan standar 2-8 C terverifikasi; butuh 1 survei baseline faskes lokal.
+
+[IDEA-035] (Agrikultur / Jamur) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: Literatur budidaya; ISO 7726 (verifikasi)
+  Judul   : Pengendalian Suhu, Kelembapan & Sirkulasi Ruang Jamur Tiram Berbasis Evaporative Cooling dan Ventilasi Adaptif
+  Konteks : Pengendalian suhu, kelembapan, dan sirkulasi ruang jamur tiram; evaporative cooling dibatasi wet-bulb.
+  Bukti   : Evaluasi teknis selesai; wet-bulb limit 2-5 C. Butuh baseline suhu/RH lokasi dan penetapan strain (P. ostreatus vs strain tropis).
+  Syarat  : Evaluasi teknis selesai; wet-bulb limit 2-5 C. Butuh baseline suhu/RH lokasi dan penetapan strain (P. ostreatus vs strain tropis).
+
+[IDEA-036] (Kesehatan / Sterilisasi) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: ISO 17665-1, ISO 11140-1 (verifikasi)
+  Judul   : Verifikasi Siklus Sterilisasi Autoklaf Berbasis IoT dengan Perhitungan F0 dan Audit Trail
+  Konteks : Verifikasi siklus sterilisasi autoklaf dengan F0 dan audit trail.
+  Bukti   : Butuh akses autoklaf, indikator biologis/kimia, dan penempatan sensor. Contoh F0: 115 C/30 min = 7,54 min; 121 C/15 min = 15 min.
+  Syarat  : Butuh akses autoklaf, indikator biologis/kimia, dan penempatan sensor. Contoh F0: 115 C/30 min = 7,54 min; 121 C/15 min = 15 min.
+
+[IDEA-037] (Keselamatan Lab / Aliran) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: ASHRAE 110, EN 14175 (verifikasi)
+  Judul   : Pemantauan Kinerja Lemari Asam (Fume Hood) Berbasis IoT Menggunakan Face Velocity dan Posisi Sash
+  Konteks : Pemantauan kontinu kinerja fume hood (face velocity, posisi sash) untuk keselamatan lab.
+  Bukti   : Butuh anemometer terkalibrasi dan uji tracer gas; face velocity bukan jaminan containment.
+  Syarat  : Butuh anemometer terkalibrasi dan uji tracer gas; face velocity bukan jaminan containment.
+
+[IDEA-038] (K3 / Tekanan Panas) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: ISO 7243, ISO 7726 (verifikasi)
+  Judul   : Pemantauan Tekanan Panas (WBGT) Pekerja Outdoor Berbasis IoT dengan Validasi WBGT Meter Referensi
+  Konteks : Pemantauan tekanan panas (WBGT) pekerja outdoor.
+  Bukti   : Butuh WBGT meter referensi; perawatan wet bulb dan time constant globe.
+  Syarat  : Butuh WBGT meter referensi; perawatan wet bulb dan time constant globe.
+
+[IDEA-039] (K3 / Kebisingan) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: IEC 61672-1, ISO 9612, Permenaker 5/2018 (verifikasi)
+  Judul   : Pemantauan Dosis Kebisingan Kerja Berbasis IoT dengan Validasi Sound Level Meter
+  Konteks : Pemantauan dosis kebisingan kerja (Leq, LEX,8h).
+  Bukti   : Butuh SLM kelas 1/2 dan acoustic calibrator; wind noise dan body shielding.
+  Syarat  : Butuh SLM kelas 1/2 dan acoustic calibrator; wind noise dan body shielding.
+
+[IDEA-040] (Pascapanen / Silo) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: SNI 0224:2022, SNI 6128:2020 (verifikasi)
+  Judul   : Peringatan Dini Hotspot pada Silo Gabah Berbasis IoT Menggunakan Suhu Berlapis, RH, dan CO2
+  Konteks : Peringatan dini hotspot silo gabah (suhu berlapis, RH, CO2).
+  Bukti   : Butuh akses silo dan kalibrasi CO2; payer adalah operator silo/mill, bukan petani.
+  Syarat  : Butuh akses silo dan kalibrasi CO2; payer adalah operator silo/mill, bukan petani.
+
+[IDEA-041] (Energi / PV) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: IEC 60904, IEC 61724-1 (verifikasi)
+  Judul   : Pelacak Kurva I-V Panel Surya Portabel Berbasis IoT untuk Deteksi Shading dan Degradasi
+  Konteks : Pelacak kurva I-V panel surya portabel untuk deteksi shading/degradasi.
+  Bukti   : Butuh I-V tracer referensi/pyranometer; keselamatan DC dan koreksi iradiansi.
+  Syarat  : Butuh I-V tracer referensi/pyranometer; keselamatan DC dan koreksi iradiansi.
+
+[IDEA-042] (Akuakultur / DO) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: ISO 5814 (verifikasi)
+  Judul   : Pemantauan Oksigen Terlarut (DO) Kolam Budidaya Berbasis IoT dengan Kompensasi Suhu dan Validasi Winkler
+  Konteks : Pemantauan oksigen terlarut (DO) kolam budidaya dengan kompensasi suhu.
+  Bukti   : Butuh akses kolam dan sensor DO; biofouling dan kalibrasi.
+  Syarat  : Butuh akses kolam dan sensor DO; biofouling dan kalibrasi.
+
+[IDEA-043] (Agrikultur / Hidroponik) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: ISO 7888 (EC) (verifikasi)
+  Judul   : Dosing Nutrisi Hidroponik Berbasis IoT dengan Kompensasi Drift Sensor EC/pH dan Validasi Laboratorium
+  Konteks : Dosing nutrisi hidroponik dengan kompensasi drift sensor EC/pH.
+  Bukti   : Butuh EC/pH meter lab; drift/biofouling dan kalibrasi pompa peristaltik.
+  Syarat  : Butuh EC/pH meter lab; drift/biofouling dan kalibrasi pompa peristaltik.
+
+[IDEA-044] (Bangunan / IAQ) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: ASHRAE 62.1 (verifikasi)
+  Judul   : Pemantauan Kualitas Udara Dalam Ruang dan Kendali Ventilasi Berbasis IoT (CO2, PM2.5, VOC)
+  Konteks : Pemantauan kualitas udara dalam ruang dan kendali ventilasi (CO2, PM2.5, VOC).
+  Bukti   : Butuh reference monitor; fokus pada ventilasi, bukan klaim kesehatan.
+  Syarat  : Butuh reference monitor; fokus pada ventilasi, bukan klaim kesehatan.
+
+[IDEA-045] (Agrikultur / Irigasi) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: FAO 56, ISO 11274 (verifikasi)
+  Judul   : Irigasi Presisi Berbasis IoT Menggunakan Kelembapan Tanah Terkalibrasi dan Neraca Air
+  Konteks : Irigasi presisi dengan kelembapan tanah terkalibrasi dan neraca air.
+  Bukti   : Butuh kalibrasi gravimetrik per tekstur tanah; daya valve 12 V.
+  Syarat  : Butuh kalibrasi gravimetrik per tekstur tanah; daya valve 12 V.
+
+[IDEA-046] (Agrikultur / Hama) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: Pedoman IPM (verifikasi)
+  Judul   : Perangkap Cahaya Pintar Berbasis IoT untuk Monitoring Populasi Hama dengan Penghitungan Citra
+  Konteks : Perangkap cahaya pintar untuk monitoring populasi hama dengan penghitungan citra.
+  Bukti   : Butuh hitung manual sebagai ground truth; pencahayaan malam dan image processing.
+  Syarat  : Butuh hitung manual sebagai ground truth; pencahayaan malam dan image processing.
+
+[IDEA-047] (Energi / DC) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: IEC 61724-1 (verifikasi)
+  Judul   : Pemantauan Energi Sistem Surya Mandiri Tegangan Rendah Berbasis IoT Menggunakan Shunt dan Coulomb Counting
+  Konteks : Pemantauan energi surya mandiri tegangan rendah (shunt, coulomb counting).
+  Bukti   : Butuh multimeter referensi; resolusi shunt 0,75 mV pada 0,5 A; keselamatan baterai.
+  Syarat  : Butuh multimeter referensi; resolusi shunt 0,75 mV pada 0,5 A; keselamatan baterai.
+
+[IDEA-048] (Pascapanen / Gabah) - Status: FAILED_ARCHIVED | Iterasi: 0/3 | Sync: SYNCED | Ref: MISTAKE-008
+  Judul   : Pengukuran Kadar Air Gabah Berbasis IoT untuk Petani Kecil
+  Konteks : Pengukuran kadar air gabah untuk petani kecil; gugur karena target adopter salah.
+  Bukti   : Gugur pada PROBLEM_FAILURE: target adopter salah; penjemuran gratis; petani kecil tidak punya anggaran/kewenangan tindak lanjut.
+  Syarat  : Lihat MISTAKE-008
+
+[IDEA-049] (Peternakan / Kandang) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: Pedoman peternakan; THI (verifikasi)
+  Judul   : Pemantauan Iklim dan Amonia Kandang Ayam Broiler Berbasis IoT dengan Kendali Ventilasi
+  Konteks : Pemantauan iklim dan amonia kandang broiler dengan kendali ventilasi.
+  Bukti   : Butuh akses kandang dan kalibrasi sensor NH3; fokus pada ventilasi dan THI, bukan klaim produksi.
+  Syarat  : Butuh akses kandang dan kalibrasi sensor NH3; fokus pada ventilasi dan THI, bukan klaim produksi.
+
+[IDEA-050] (Peternakan / Susu) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: SNI susu segar (verifikasi)
+  Judul   : Pemantauan Suhu dan Mutu Susu di Koperasi Berbasis IoT dengan Validasi Laboratorium
+  Konteks : Pemantauan suhu dan mutu susu di koperasi.
+  Bukti   : Butuh akses KUD dan uji lab pH/MBRT; sensor harus food-grade dan mudah dibersihkan.
+  Syarat  : Butuh akses KUD dan uji lab pH/MBRT; sensor harus food-grade dan mudah dibersihkan.
+
+[IDEA-051] (Agrikultur / Lebah) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: Pedoman budidaya lebah (verifikasi)
+  Judul   : Pemantauan Sarang Lebah/Kelulut Berbasis IoT Menggunakan Berat, Suhu, RH, dan Suara
+  Konteks : Pemantauan sarang lebah/kelulut (berat, suhu, RH, suara).
+  Bukti   : Butuh akses sarang dan baseline; load cell 50 kg resolusi 10 g; jangan mengganggu koloni.
+  Syarat  : Butuh akses sarang dan baseline; load cell 50 kg resolusi 10 g; jangan mengganggu koloni.
+
 --------------------------------------------------------------------------------
 3. ARSIP KEGAGALAN AKTIF (MISTAKES.md)
 --------------------------------------------------------------------------------
@@ -64,5 +301,11 @@ Tanggal    : 2026-11-25
   Akar Masalah : Perangkat pembelajaran rangkaian dasar (kit edukasi tombol, balok magnetik, continuity tester) sudah banyak dijual dengan harga jauh lebih murah dan kualitas mapan tanpa diferensiasi teknis pada usulan.
   Anti-Pattern : Jangan mengusulkan pembuatan alat bantu praktikum dasar yang fungsinya sudah terwakili oleh kit edukasi komersial murah tanpa mendefinisikan celah teknis spesifik yang gagal ditangani alat komersial tersebut.
   Trigger      : Ditemukan celah diagnostik spesifik pada modul praktikum mikrokontroler tingkat lanjut (misalnya deteksi konflik bus komunikasi atau fault injection pin mikrokontroler secara otomatis) yang tidak tersedia pada alat komersial murah, disertai bukti kebutuhan dari dosen/laboran mata kuliah terkait.
+
+[MISTAKE-008 -> IDEA-048] Kategori: PROBLEM_FAILURE (Arsip: 2026-11-26)
+  Ringkasan    : Pengukuran kadar air gabah berbasis IoT untuk petani kecil.
+  Akar Masalah : Target adopter salah: petani kecil tidak punya anggaran, penjemuran gratis, dan alat tidak mengubah konstrain modal/tenaga kerja. Aspek SOLUTION_FAILURE: tidak ada diferensiasi yang mengalahkan metode gratis.
+  Anti-Pattern : Jangan mengusulkan alat yang harus dibeli pengguna akhir yang tidak punya anggaran dan tidak punya kewenangan tindak lanjut; bedakan pengguna (user) dari pembayar (payer).
+  Trigger      : Tersedia bukti dari koperasi/BUMDes/mill tentang kebutuhan pengukuran kadar air, anggaran, dan celah spesifik dibanding moisture meter komersial; atau model layanan bersama dengan willingness-to-pay terukur.
 
 ================================================================================

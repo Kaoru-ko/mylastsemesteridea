@@ -59,3 +59,17 @@ Dokumen ini adalah *Single Source of Truth* untuk seluruh riwayat kegagalan ide.
 * **Akar Masalah & Bukti Penggugur:** Perangkat pembelajaran rangkaian dasar (seperti kit edukasi tombol, balok magnetik, *continuity tester*, dan modul pelatihan dasar) sudah banyak dijual di pasaran dengan harga jauh lebih murah dan kualitas mapan. Usulan tidak membuktikan diferensiasi teknis atau keunggulan diagnostik yang tidak bisa dipenuhi oleh produk komersial yang sudah ada.
 * **Anti-Pattern (Larangan bagi Agen):** Jangan mengusulkan pembuatan alat bantu praktikum dasar yang fungsinya sudah terwakili oleh kit edukasi komersial murah tanpa mendefinisikan celah teknis spesifik yang gagal ditangani alat komersial tersebut.
 * **Re-evaluation Trigger (Syarat Objektif Pembuka Kunci):** Ditemukan celah diagnostik spesifik pada modul praktikum mikrokontroler tingkat lanjut (misalnya deteksi konflik bus komunikasi atau *fault injection* pin mikrokontroler secara otomatis) yang tidak tersedia pada alat komersial murah, disertai bukti kebutuhan dari dosen/laboran mata kuliah terkait.
+
+#### 5. Catatan Legacy
+* **MISTAKE-005 (`IDEA-013`), MISTAKE-006 (`IDEA-020`), MISTAKE-007 (`IDEA-028`):** Arsip legacy tanpa kategori/trigger; tidak dipakai sebagai bukti aktif dan tidak dihapus agar riwayat tetap utuh. Digantikan oleh `IDEA-049/050/051`.
+
+##### MISTAKE-008
+* **IDEA-ID:** IDEA-048
+* **Tanggal Arsip:** 2026-11-26
+* **Status Sebelum Gagal:** EVALUATING
+* **Kategori Kegagalan:** PROBLEM_FAILURE
+* **Ringkasan Ide:** Pengukuran kadar air gabah berbasis IoT untuk petani kecil.
+* **Akar Masalah & Bukti Penggugur:** Target adopter salah: petani kecil tidak punya anggaran, penjemuran gratis, dan alat tidak mengubah konstrain modal/tenaga kerja. Aspek `SOLUTION_FAILURE`: tidak ada diferensiasi yang mengalahkan metode gratis.
+* **Anti-Pattern (Larangan bagi Agen):** Jangan mengusulkan alat yang harus dibeli pengguna akhir yang tidak punya anggaran dan tidak punya kewenangan tindak lanjut; bedakan pengguna (*user*) dari pembayar (*payer*).
+* **Re-evaluation Trigger (Syarat Objektif Pembuka Kunci):** Tersedia bukti dari koperasi/BUMDes/mill tentang kebutuhan pengukuran kadar air, anggaran, dan celah spesifik dibanding moisture meter komersial; atau model layanan bersama dengan *willingness-to-pay* terukur.
+
