@@ -5,9 +5,9 @@ Tanggal    : 2026-11-26
 ================================================================================
 
 1. RINGKASAN STATUS IDE
-   - Total Ide Terdaftar        : 45
+   - Total Ide Terdaftar        : 46
    - FAILED_ARCHIVED            : 6 (IDEA-001, IDEA-002, IDEA-013, IDEA-020, IDEA-028, IDEA-048)
-   - BLOCKED_PENDING_EVIDENCE   : 19 (IDEA-006, IDEA-014, IDEA-016, IDEA-022, IDEA-023, IDEA-025, IDEA-029, IDEA-030, IDEA-031, IDEA-032, IDEA-033, IDEA-034, IDEA-035, IDEA-036, IDEA-038, IDEA-040, IDEA-042, IDEA-049, IDEA-051)
+   - BLOCKED_PENDING_EVIDENCE   : 20 (IDEA-006, IDEA-014, IDEA-016, IDEA-022, IDEA-023, IDEA-025, IDEA-029, IDEA-030, IDEA-031, IDEA-032, IDEA-033, IDEA-034, IDEA-035, IDEA-036, IDEA-038, IDEA-040, IDEA-042, IDEA-049, IDEA-051, IDEA-052)
    - EVALUATING                 : 9 (IDEA-037, IDEA-039, IDEA-041, IDEA-043, IDEA-044, IDEA-045, IDEA-046, IDEA-047, IDEA-050)
    - REVISING                   : 3 (IDEA-019, IDEA-021, IDEA-027)
    - VALIDATED_ACTIVE           : 5 (IDEA-015, IDEA-017, IDEA-018, IDEA-024, IDEA-026)
@@ -286,6 +286,12 @@ Tanggal    : 2026-11-26
   Konteks : Pemantauan sarang lebah/kelulut (berat, suhu, RH, suara).
   Bukti   : Butuh akses sarang dan baseline; load cell 50 kg resolusi 10 g; jangan mengganggu koloni.
   Syarat  : Butuh akses sarang dan baseline; load cell 50 kg resolusi 10 g; jangan mengganggu koloni.
+
+[IDEA-052] (Pangan / Pengeringan) - Status: BLOCKED_PENDING_EVIDENCE | Iterasi: 0/3 | Sync: SYNCED | Ref: Metode oven (AOAC/SNI, verifikasi); SNI brem (verifikasi)
+  Judul   : Rancang Bangun Smart Dryer Brem Berbasis ESP32 dengan Pengendalian Suhu dan Monitoring Penurunan Massa untuk Menjaga Konsistensi Kadar Air Produk
+  Konteks : Pengeringan brem yang konsisten; kadar air memengaruhi tekstur, daya simpan, dan risiko jamur. Sistem mengendalikan suhu dan memantau penurunan massa untuk endpoint kadar air.
+  Bukti   : Konsep teknis jelas; butuh baseline produsen (metode & variasi kadar air saat ini), spesifikasi produk (brem padat Madiun vs bentuk lain), dan akses oven untuk validasi.
+  Syarat  : (1) Baseline kadar air & variasi produk dari produsen brem; (2) akses oven/AOAC untuk validasi; (3) definisi produk & target kadar air.
 
 --------------------------------------------------------------------------------
 3. ARSIP KEGAGALAN AKTIF (MISTAKES.md)

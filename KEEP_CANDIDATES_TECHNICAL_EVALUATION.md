@@ -697,3 +697,36 @@ Metodenya (endpoint gravimetri + dew point) tahan lama. Produknya niche; dryer k
 | Berguna jangka panjang | Tinggi | Sedang (niche) |
 
 **Rekomendasi:** **Kandidat 2 lebih dulu** — jalur lebih jelas, validasi lebih mudah, dan pengguna institusional lebih realistis. **Kandidat 3** layak dilanjutkan hanya jika ada DSC dan lab pengguna; jika tidak, ubah klaim menjadi “pengering gravimetri + dew point” tanpa klaim Tg terukur.
+
+---
+
+# KANDIDAT 4 — Smart Dryer Brem (IDEA-052)
+
+## Identitas
+**Judul:** Rancang Bangun Smart Dryer Brem Berbasis ESP32 dengan Pengendalian Suhu dan Monitoring Penurunan Massa untuk Menjaga Konsistensi Kadar Air Produk
+**Status:** `BLOCKED_PENDING_EVIDENCE` — menunggu baseline produsen, definisi produk, dan akses oven.
+
+## Masalah
+Kadar air brem yang tidak konsisten memengaruhi tekstur, daya simpan, dan risiko jamur. Pengeringan konvensional bergantung pada timer/feeling, bukan kadar air aktual.
+
+## Konsep
+ESP32 + sensor suhu/RH + load cell (penurunan massa) + heater/fan. Suhu dikendalikan; endpoint pengeringan ditentukan dari laju penurunan massa (`dm/dt`) yang dikalibrasi terhadap kadar air oven.
+
+## Angka penting
+- Batch 2 kg: 0,1% air = **2 g**; load cell 5 kg resolusi 1 g memadai.
+- Dari 30% ke 15% moisture (basis basah): air diuapkan ±0,35 kg; energi ±865 kJ; pada 500 W teoretis ±29 menit, realitasnya beberapa jam karena difusi.
+- Suhu pengeringan harus ditentukan eksperimental (mis. 40–60 °C); jangan mengasumsikan satu suhu untuk semua formula.
+
+## Apple-to-apple
+- Split batch: pengeringan usulan vs konvensional vs oven referensi.
+- Ukur kadar air oven (AOAC/SNI) pada interval; bandingkan prediksi massa vs oven; laporkan bias, RMSE, dan simpangan baku antar-batch.
+- Kriteria lulus: **konsistensi** (SD lebih rendah), bukan hanya rata-rata kadar air.
+
+## Risiko
+- Load cell drift, vibrasi, dan aliran udara.
+- Kehilangan massa volatil (fermentasi) tidak identik dengan air.
+- Heterogenitas produk dan keselamatan pangan (heater, kontaminasi).
+- Adopsi UMKM: perlu baseline dan willingness-to-pay.
+
+## Verdict
+**KEEP — konsep kuat dan jelas IoT.** Status `BLOCKED_PENDING_EVIDENCE` sampai ada baseline produsen, definisi produk, dan akses oven. Jangan klaim “kadar air” tanpa validasi oven.

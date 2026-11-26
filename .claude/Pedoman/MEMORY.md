@@ -51,6 +51,7 @@ Dokumen ini adalah *Single Source of Truth* untuk **seluruh IDEA-ID dan status t
 | IDEA-049 | [Peternakan / Kandang] Iklim & Amonia Kandang Broiler + Kendali Ventilasi | BLOCKED_PENDING_EVIDENCE | 0/3 | SYNCED | Pedoman peternakan; THI (verifikasi) |
 | IDEA-050 | [Peternakan / Susu] Suhu & Mutu Susu di Koperasi | EVALUATING | 0/3 | SYNCED | SNI susu segar (verifikasi) |
 | IDEA-051 | [Agrikultur / Lebah] Sarang Lebah/Kelulut: Berat, Suhu, RH, Suara | BLOCKED_PENDING_EVIDENCE | 0/3 | SYNCED | Pedoman budidaya lebah (verifikasi) |
+| IDEA-052 | [Pangan / Pengeringan] Smart Dryer Brem ESP32: Suhu + Penurunan Massa | BLOCKED_PENDING_EVIDENCE | 0/3 | SYNCED | Metode oven (AOAC/SNI, verifikasi); SNI brem (verifikasi) |
 
 ---
 
@@ -140,7 +141,8 @@ Dokumen ini adalah *Single Source of Truth* untuk **seluruh IDEA-ID dan status t
 ---
 
 #### 3. Catatan Sesi 2026-11-26
-* **Total registry:** 45 ide (001-006 dari remote + 013-051 dari pembaruan lokal). ID 007-012 tidak dipakai (gap historis).
+* **Total registry:** 46 ide (001-006 dari remote + 013-052 dari pembaruan lokal). ID 007-012 tidak dipakai (gap historis).
+* **IDEA-052 (KEEP baru):** Smart Dryer Brem berbasis ESP32; pengendalian suhu + monitoring penurunan massa untuk konsistensi kadar air. Status `BLOCKED_PENDING_EVIDENCE`; butuh baseline produsen, definisi produk, dan akses oven.
 * **Tiga judul KEEP:** jamur tiram = `IDEA-035`; kualitas daya = revisi `IDEA-027`; filamen = revisi `IDEA-019`.
 * **Revisi:** `IDEA-019` dan `IDEA-027` -> `REVISING` 1/3 dengan catatan teknis (ASTM D6980 bukan Tg; ADC internal ESP32 tidak memadai).
 * **Kandidat baru:** `IDEA-035`-`IDEA-047` dan `IDEA-049`-`IDEA-051`; status `BLOCKED_PENDING_EVIDENCE` atau `EVALUATING` sesuai akses. `IDEA-048` -> `FAILED_ARCHIVED` (`MISTAKE-008`).
