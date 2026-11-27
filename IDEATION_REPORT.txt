@@ -5,10 +5,10 @@ Tanggal    : 2026-11-26
 ================================================================================
 
 1. RINGKASAN STATUS IDE
-   - Total Ide Terdaftar        : 46
+   - Total Ide Terdaftar        : 51
    - FAILED_ARCHIVED            : 6 (IDEA-001, IDEA-002, IDEA-013, IDEA-020, IDEA-028, IDEA-048)
    - BLOCKED_PENDING_EVIDENCE   : 20 (IDEA-006, IDEA-014, IDEA-016, IDEA-022, IDEA-023, IDEA-025, IDEA-029, IDEA-030, IDEA-031, IDEA-032, IDEA-033, IDEA-034, IDEA-035, IDEA-036, IDEA-038, IDEA-040, IDEA-042, IDEA-049, IDEA-051, IDEA-052)
-   - EVALUATING                 : 9 (IDEA-037, IDEA-039, IDEA-041, IDEA-043, IDEA-044, IDEA-045, IDEA-046, IDEA-047, IDEA-050)
+   - EVALUATING                 : 14 (IDEA-037, IDEA-039, IDEA-041, IDEA-043, IDEA-044, IDEA-045, IDEA-046, IDEA-047, IDEA-050, IDEA-053, IDEA-054, IDEA-055, IDEA-056, IDEA-057)
    - REVISING                   : 3 (IDEA-019, IDEA-021, IDEA-027)
    - VALIDATED_ACTIVE           : 5 (IDEA-015, IDEA-017, IDEA-018, IDEA-024, IDEA-026)
    - DRAFT                      : 2 (IDEA-004, IDEA-005)
@@ -292,6 +292,36 @@ Tanggal    : 2026-11-26
   Konteks : Pengeringan brem yang konsisten; kadar air memengaruhi tekstur, daya simpan, dan risiko jamur. Sistem mengendalikan suhu dan memantau penurunan massa untuk endpoint kadar air.
   Bukti   : Konsep teknis jelas; butuh baseline produsen (metode & variasi kadar air saat ini), spesifikasi produk (brem padat Madiun vs bentuk lain), dan akses oven untuk validasi.
   Syarat  : (1) Baseline kadar air & variasi produk dari produsen brem; (2) akses oven/AOAC untuk validasi; (3) definisi produk & target kadar air.
+
+[IDEA-053] (Pertanian / Benih) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: Uji germinasi ISTA (verifikasi); SNI benih (verifikasi)
+  Judul   : Rancang Bangun Smart Seed Germination Chamber Berbasis ESP32 dengan Pengendalian Suhu, RH, dan Fotoperiod untuk Meningkatkan Konsistensi Daya Berkecambah
+  Konteks : Pengujian daya berkecambah yang konsisten; chamber mengendalikan suhu, RH, dan fotoperiod.
+  Bukti   : Konsep matang; butuh akses laboratorium benih/germinator standar dan lot benih untuk validasi.
+  Syarat  : (1) Akses lab benih/germinator; (2) lot benih dengan viabilitas diketahui; (3) protokol ISTA/SNI.
+
+[IDEA-054] (Pascapanen / Cold Storage) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: Pedoman penyimpanan sayur (verifikasi); logger terkalibrasi
+  Judul   : Rancang Bangun Smart Monitoring Cold Storage Sayur Berbasis ESP32 dengan Sensor Suhu, RH, dan CO2 untuk Menekan Susut Berat dan Memperpanjang Daya Simpan
+  Konteks : Fluktuasi suhu/RH mempercepat susut berat dan pembusukan sayur; monitoring kontinu + alarm.
+  Bukti   : Konsep matang; butuh akses cold storage dan batch sayur untuk uji susut berat/daya simpan.
+  Syarat  : (1) Akses cold storage; (2) batch sayur homogen; (3) timbangan & logger referensi.
+
+[IDEA-055] (Akuakultur / Pakan) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: FCR (metrik baku); pedoman budidaya (verifikasi)
+  Judul   : Rancang Bangun Smart Fish Feed Dispenser Berbasis ESP32 dengan Penjadwalan dan Monitoring Konsumsi untuk Menekan Feed Conversion Ratio
+  Konteks : Pemberian pakan manual tidak konsisten; overfeeding meningkatkan biaya dan mencemari air.
+  Bukti   : Konsep matang; butuh akses kolam/tank dan pengukuran berat ikan/pakan.
+  Syarat  : (1) Akses kolam/tank; (2) timbangan ikan & pakan; (3) jadwal pakan.
+
+[IDEA-056] (Peternakan / Hatchery) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: Candling manual (ground truth); pedoman hatchery (verifikasi)
+  Judul   : Rancang Bangun Smart Egg Candling dan Penghitung Fertilitas Telur Berbasis ESP32 dengan Pengolahan Citra untuk Mengurangi Kesalahan Manual di Hatchery
+  Konteks : Candling dan penghitungan telur manual memakan waktu dan tidak konsisten.
+  Bukti   : Konsep jelas; risiko image processing (warna/bercak kerabang); butuh akses hatchery.
+  Syarat  : (1) Akses hatchery/tray telur; (2) candling manual sebagai ground truth; (3) dataset citra.
+
+[IDEA-057] (Akuakultur / Aquaponics) - Status: EVALUATING | Iterasi: 0/3 | Sync: SYNCED | Ref: Winkler/ISO 5814 (DO, verifikasi); pedoman akuaponik (verifikasi)
+  Judul   : Rancang Bangun Smart Aquaponics Berbasis ESP32 dengan Monitoring DO, pH, EC, dan Suhu untuk Menjaga Kestabilan Air dan Meningkatkan Yield
+  Konteks : Keseimbangan air akuaponik rapuh; pengujian manual terlambat.
+  Bukti   : Konsep kuat; cakupan lebar; butuh akses sistem akuaponik dan pembatasan komoditas.
+  Syarat  : (1) Akses sistem akuaponik; (2) pembatasan komoditas ikan/sayur; (3) alat uji DO/pH referensi.
 
 --------------------------------------------------------------------------------
 3. ARSIP KEGAGALAN AKTIF (MISTAKES.md)

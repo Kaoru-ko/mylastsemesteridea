@@ -52,6 +52,11 @@ Dokumen ini adalah *Single Source of Truth* untuk **seluruh IDEA-ID dan status t
 | IDEA-050 | [Peternakan / Susu] Suhu & Mutu Susu di Koperasi | EVALUATING | 0/3 | SYNCED | SNI susu segar (verifikasi) |
 | IDEA-051 | [Agrikultur / Lebah] Sarang Lebah/Kelulut: Berat, Suhu, RH, Suara | BLOCKED_PENDING_EVIDENCE | 0/3 | SYNCED | Pedoman budidaya lebah (verifikasi) |
 | IDEA-052 | [Pangan / Pengeringan] Smart Dryer Brem ESP32: Suhu + Penurunan Massa | BLOCKED_PENDING_EVIDENCE | 0/3 | SYNCED | Metode oven (AOAC/SNI, verifikasi); SNI brem (verifikasi) |
+| IDEA-053 | [Pertanian / Benih] Smart Seed Germination Chamber: Suhu, RH, Fotoperiod | EVALUATING | 0/3 | SYNCED | Uji germinasi ISTA (verifikasi); SNI benih (verifikasi) |
+| IDEA-054 | [Pascapanen / Cold Storage] Monitoring Cold Storage Sayur: Suhu, RH, CO2 | EVALUATING | 0/3 | SYNCED | Pedoman penyimpanan sayur (verifikasi); logger terkalibrasi |
+| IDEA-055 | [Akuakultur / Pakan] Smart Fish Feed Dispenser: Jadwal + Konsumsi | EVALUATING | 0/3 | SYNCED | FCR (metrik baku); pedoman budidaya (verifikasi) |
+| IDEA-056 | [Peternakan / Hatchery] Egg Candling & Fertility Counting | EVALUATING | 0/3 | SYNCED | Candling manual (ground truth); pedoman hatchery (verifikasi) |
+| IDEA-057 | [Akuakultur / Aquaponics] Smart Aquaponics: DO, pH, EC, Suhu | EVALUATING | 0/3 | SYNCED | Winkler/ISO 5814 (verifikasi); pedoman akuaponik (verifikasi) |
 
 ---
 
@@ -141,7 +146,8 @@ Dokumen ini adalah *Single Source of Truth* untuk **seluruh IDEA-ID dan status t
 ---
 
 #### 3. Catatan Sesi 2026-11-26
-* **Total registry:** 46 ide (001-006 dari remote + 013-052 dari pembaruan lokal). ID 007-012 tidak dipakai (gap historis).
+* **Total registry:** 51 ide (001-006 dari remote + 013-057 dari pembaruan lokal). ID 007-012 tidak dipakai (gap historis).
+* **IDEA-053–057 (kandidat matang):** seed germination chamber, cold storage sayur, fish feed dispenser, egg candling, aquaponics. Status `EVALUATING`; akses lab/kolam/hatchery menjadi Unblock_Trigger.
 * **IDEA-052 (KEEP baru):** Smart Dryer Brem berbasis ESP32; pengendalian suhu + monitoring penurunan massa untuk konsistensi kadar air. Status `BLOCKED_PENDING_EVIDENCE`; butuh baseline produsen, definisi produk, dan akses oven.
 * **Tiga judul KEEP:** jamur tiram = `IDEA-035`; kualitas daya = revisi `IDEA-027`; filamen = revisi `IDEA-019`.
 * **Revisi:** `IDEA-019` dan `IDEA-027` -> `REVISING` 1/3 dengan catatan teknis (ASTM D6980 bukan Tg; ADC internal ESP32 tidak memadai).
